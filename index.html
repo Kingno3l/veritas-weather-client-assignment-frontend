@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <!-- LEFT SIDE -->
+            <div class="card-left">
+                <small class="brand">Veritas Weather Assignment</small>
+
+                <div class="image-box">
+                    <img class="image" src="assets/images/hot air ballon.png">
+                </div>
+
+                <h1 id="temp-value" class="large-font">--°</h1>
+
+                <h2 class="city-name" id="city-name">City</h2>
+                <small id="date-time">--</small>
+
+                <h3 id="weather-main" class="weather-main"></h3>
+                <small id="weather-desc">--</small>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="card-right">
+                <div class="search-box">
+                    <input type="text" id="search-input" name="location" placeholder="Another location">
+                    <button id="search-btn" type="button" class="search-btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <p class="light-text suggestion">Paris</p>
+                <p class="light-text suggestion">Lagos</p>
+                <p class="light-text suggestion">Lisbon</p>
+                <p class="light-text suggestion">New York</p>
+
+                <div class="line"></div>
+
+                <p class="section-title">Weather Details</p>
+
+                <p class="light-text" id="detail-clouds">--</p>
+                <p class="light-text" id="detail-humidity">--</p>
+                <p class="light-text" id="detail-wind">--</p>
+                <p class="light-text" id="detail-rain">--</p>
+
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: linear-gradient(#81D4FA, #2196F3);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-left {
+    width: 65%;
+    padding: 40px;
+    background-image: linear-gradient(#2196F3, #81D4FA);
+}
+
+.card-right {
+    width: 35%;
+    padding: 30px;
+    background-color: #607D8B;
+}
+
+.image-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+}
+
+.large-font {
+    font-size: 70px;
+    margin: 20px 0 0 0;
+}
+
+.brand {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.weather-main {
+    margin-top: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+input {
+    width: 75%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #CFD8DC;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-bottom-color: #fff;
+}
+
+.search-btn {
+    width: 25%;
+    background-color: #E1F5FE;
+    border: none;
+    cursor: pointer;
+    padding: 16px;
+    text-align: center;
+}
+
+.search-btn i {
+    font-size: 20px;
+    color: #607D8B;
+}
+
+.light-text {
+    color: #CFD8DC;
+    margin: 4px 0;
+}
+
+.suggestion:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.line {
+    height: 1px;
+    background-color: #CFD8DC;
+    margin: 20px 0;
+}
+
+.section-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card-left,
+    .card-right {
+        width: 100%;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    .search-btn {
+        width: 30%;
+    }
+}
+
+/* Chrome, Safari, Opera */
+#search-input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+    /* ensures full color */
+}
+
+/* Firefox */
+#search-input::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+/* Internet Explorer 10-11 */
+#search-input:-ms-input-placeholder {
+    color: #ffffff;
+}
+
+/* Microsoft Edge */
+#search-input::-ms-input-placeholder {
+    color: #ffffff;
+}
